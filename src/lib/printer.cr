@@ -1,7 +1,7 @@
 require "tablo"
 
 module Printer
-  def self.run(data : Array(Array(String)), win, bin_id : String)
+  def self.run(data : Array(Array(String)), win : Crt::Window, bin_id : String)
     table = Tablo::Table.new(data) do |t|
       t.add_column("Method") { |n| n[0] }
       t.add_column("Path", width: 30) { |n| n[1] }
