@@ -1,9 +1,5 @@
 version: 2.0
 shards:
-  clim:
-    git: https://github.com/at-grandpa/clim.git
-    version: 0.13.0
-
   crt:
     git: https://github.com/maiha/crt.cr.git
     version: 0.4.2

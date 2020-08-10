@@ -33,12 +33,13 @@ module PostbinAPI
     end
     info = JSON.parse res.body
     {
-      method:  info["method"].to_s,
-      path:    info["path"].to_s,
-      headers: info["headers"].to_s,
-      query:   info["query"].to_s,
-      body:    info["body"].to_s,
-      ip:      info["ip"].to_s,
+      method:   info["method"].to_s,
+      path:     info["path"].to_s,
+      headers:  info["headers"].to_s,
+      query:    info["query"].to_s,
+      body:     info["body"].to_s,
+      ip:       info["ip"].to_s,
+      inserted: info["inserted"].to_s,
     }.to_h
   end
 end

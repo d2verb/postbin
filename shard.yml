@@ -6,16 +6,13 @@ authors:
 
 targets:
   postbin:
-    main: src/cli.cr
+    main: src/postbin.cr
 
 crystal: 0.35.1
 
 license: MIT
 
 dependencies:
-  clim:
-    github: at-grandpa/clim
-    version: 0.13.0
   tablo:
     github: hutou/tablo
     version: 0.9.3
